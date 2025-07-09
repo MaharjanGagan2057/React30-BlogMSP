@@ -3,12 +3,13 @@ import Layout from '../../components/layout/Layout'
 
 const AddBlog = () => {
   return (
+    <>
     
     <Layout>    
    
+<div>
 
 <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-
 
 <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
    <div className="container">
@@ -943,9 +944,11 @@ const AddBlog = () => {
       </div>
    </div>
 </section>
+</div>
 
 
     </Layout>
+    </>
   )
 }
 

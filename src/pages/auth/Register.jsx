@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from '../../components/layout/Layout'
 
 const Register = () => {
   return (
+   
+
     <div className="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0 height-full">
       <div className="w-full sm:max-w-md p-5 mx-auto">
         <h2 className="mb-12 text-center text-5xl font-extrabold ">Welcome</h2><br />
@@ -29,6 +32,7 @@ const Register = () => {
         </form>
       </div>
     </div>
+    
   )
 }
 
