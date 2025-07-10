@@ -35,14 +35,12 @@ const Form = ({type}) => {
                </h2>
                
                <p className="text-base text-body-color leading-relaxed mb-9">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                  adiqua minim veniam quis nostrud exercitation ullamco
+               "Creating a blog involves designing and setting up a platform where you can regularly publish articles, share ideas, and engage with readers. It typically includes choosing a blogging platform or CMS, customizing the layout, writing and publishing posts, and promoting your content to build an audience."
                </p>
 
             </div>
          </div>
-         <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mr-32">
+         <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mr-auto">
             <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                <form>
                   <div className="mb-6">

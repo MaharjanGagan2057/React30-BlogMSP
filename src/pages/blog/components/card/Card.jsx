@@ -21,7 +21,7 @@ const Card = () => {
         <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
             <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
                 <img
-                    src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80"
+                    src="https://previews.123rf.com/images/hywards/hywards1503/hywards150300062/37463043-financial-background.jpg"
                     alt="card-image" className="object-cover w-full h-full" />
             </div>
             <div className="p-6">
