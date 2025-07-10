@@ -10,8 +10,8 @@ const SingleBlog = () => {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row -mx-4">
             <div class="md:flex-1 px-4">
-                <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                    <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg" alt="Product Image"/>
+                <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4 border-2 border-gray-400 ">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9uZXl8ZW58MHx8MHx8fDA%3D" alt="Product Image"/>
                 </div>
                 <div class="flex -mx-2 mb-4">
                      <div class="w-1/2 px-2">
