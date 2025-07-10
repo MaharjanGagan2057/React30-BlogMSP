@@ -32,7 +32,9 @@ const SingleBlog = () => {
                 <div class="flex mb-4">
                     <div class="mr-4">
                         <span class="font-bold text-gray-700 ">Catagory:</span>
-                        <span class="text-gray-600 "> Finance</span>
+                        <span class=" text-gray-600 "> Finance</span><br />
+                        <span class=" font-bold text-gray-600">Author:</span>
+                        <span class=" text-gray-600"> Ashmita Maharjan</span>
                     </div>
                     <div>
                         <span class="font-bold text-gray-700">Publish At:</span>
