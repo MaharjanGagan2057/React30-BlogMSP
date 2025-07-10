@@ -1,29 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{ useState} from 'react'
+import   {Link } from 'react-router-dom'
 
-const Form = ({type }) => {
+const Form = ({type, onsubmit}) => {
+// State to hold the form data
+  const [data, setData] =useState({
+    email: '',
+    username: '',
+    password: ''
+  })
+   // Handle change function to update the state
+  const handleChange = (e) => {    // Function to handle input changes
+    const {name,value} = e.target  // Destructure name and value from the event target
+    setdata({                      // Update the state
+      ...data,
+      [name]: value
+    })
+  }
+    const handleSubmit = (e) => {  // Function to handle form submission
+      e.preventDefault()       // Prevent the default form submission
+        onSubmit(data)
+    }
+  
   return (
     <div className="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
     <div className="w-full sm:max-w-md p-5 mx-auto">
       <h2 className="mb-12 text-center text-5xl font-extrabold">Welcome</h2><br />
-      <h2 classNameName="mb-12 text-center text-2xl pt-0">
+      <h2 className="mb-12 text-center text-2xl pt-0">
 
-         {// if the type is login, show the login text, otherwise show the register text
-         type === 'login'? "login here to continue"  : "Register here to continue"}</h2><br />
+         { type === 'login'? "login here to continue"  : "Register here to continue"}</h2><br />
          
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block mb-1" for="email"></label>
-          <input id="email" type="text" name="email" placeholder='Enter your email' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
+          <label className="block mb-1" htmlFor="email"></label>
+          <input id="email" type="text" name="email" placeholder=' Email Adress' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" onChange={handleChange} required/>
         </div>
         <div className="mb-4">
-          <label className="block mb-1" for="password"></label>
-          <input id="password" type="password" name="password"  placeholder='Enter your password' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
+          <label className="block mb-1" htmlFor="username"></label>
+          <input id="username" type="text" name="username" placeholder=' Username' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full " onChange={handleChange} required/>
+        </div>
+        <div className="mb-4">
+          <label className="block mb-1" htmlFor="password"></label>
+          <input id="password" type="password" name="password"  placeholder=' password' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full"onChange={handleChange}  required/>
         </div>
         <div className="mt-6 flex items-center justify-between">
           <div className="flex items-center">
             <input id="remember_me" type="checkbox" className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" />
-            <label for="remember_me" className="ml-2 block text-sm leading-5 text-gray-900"> Remember me </label>
+            <label htmlFor="remember_me" className="ml-2 block text-sm leading-5 text-gray-900"> Remember me </label>
           </div>
           <a href="#" className="text-sm"> Forgot your password? </a>
         </div>
@@ -36,7 +58,7 @@ const Form = ({type }) => {
             type=== 'login' &&( 
 
         <div className="mt-6 text-center">
-          < Link to="/Register" className="underline">Sign up for an account</Link>
+          < Link to="/Register" className="underline">Sign up htmlFor an account</Link>
         </div>
             )
         }
