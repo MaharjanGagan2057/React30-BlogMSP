@@ -6,7 +6,7 @@ const Card = () => {
     <>
    
     <Link to="/blog/id">
-      <div className="flex justify-center items-center min-h-screen mb-5">
+      <div className="flex justify-center items-start min-h-screen mb-0">
     <div className="max-w-[720px] mx-auto">
         <div className="block mb-4 mx-auto border-b border-slate-300 pb-2 max-w-[360px]">
             <a 
