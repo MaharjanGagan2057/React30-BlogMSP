@@ -55,7 +55,7 @@ const Form = ({type, onsubmit}) => {
 
         <div className="mt-6 text-center">
         {
-            // if the type is login, show the register link
+            // if the type is login, show the register link and vise versa
             type=== 'login' ?( 
 
           < Link to="/Register" className="underline">Sign up to create an account</Link>)

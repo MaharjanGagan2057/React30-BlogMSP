@@ -25,10 +25,10 @@ const Login = () => {
   return (
     
 <>
-<Layout>
+
 
 <Form type="login" onSubmit={handleLogin}/>
-</Layout>
+
 </>
 
       
