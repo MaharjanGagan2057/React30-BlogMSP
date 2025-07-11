@@ -11,7 +11,7 @@ const Form = ({type, onsubmit}) => {
    // Handle change function to update the state
   const handleChange = (e) => {    // Function to handle input changes
     const {name,value} = e.target  // Destructure name and value from the event target
-    setdata({                      // Update the state
+    setData({                      // Update the state
       ...data,
       [name]: value
     })
@@ -29,7 +29,7 @@ const Form = ({type, onsubmit}) => {
 
          { type === 'login'? "login here to continue"  : "Register here to continue"}</h2><br />
          
-      <form onSubmit={handleSubmit}>
+      <form onSubmit = {handleSubmit}>
         <div className="mb-4">
           <label className="block mb-1" htmlFor="email"></label>
           <input id="email" type="text" name="email" placeholder=' Email Adress' className="py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" onChange={handleChange} required/>
@@ -53,15 +53,17 @@ const Form = ({type, onsubmit}) => {
           <button className="w-full inline-flex items-center justify-center px-4 py-2 bg-blue-500 border border-transparent rounded-md font-semibold capitalize text-white hover:bg-blue-700 active:bg-blue-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">Sign In</button>
         </div>
 
+        <div className="mt-6 text-center">
         {
             // if the type is login, show the register link
-            type=== 'login' &&( 
+            type=== 'login' ?( 
 
-        <div className="mt-6 text-center">
-          < Link to="/Register" className="underline">Sign up htmlFor an account</Link>
-        </div>
+          < Link to="/Register" className="underline">Sign up to create an account</Link>)
+            : (
+              <Link to="/login" className="underline mt-6 text-center">Already have an account? Sign in</Link>
             )
         }
+        </div>
 
 
       </form>

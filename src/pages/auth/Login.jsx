@@ -12,10 +12,10 @@ const Login = () => {
     const handleLogin =  async(data) => { // Function to handle registration logic
        const response = await axios.post("https://react30.onrender.com/api/user/login",data) // Send a POST request to the registration endpoint
        try {
-       if(response.status === 201){
-        navigate('/login')
+       if(response.status === 200){
+        navigate('/')
        }else{
-        alert("Registration failed")
+        alert("Login failed")
        }
       } catch (error) {
         alert(error?.response?.data?.message)
@@ -27,7 +27,7 @@ const Login = () => {
 <>
 <Layout>
 
-<Form type="login"/>
+<Form type="login" onSubmit={handleLogin}/>
 </Layout>
 </>
 
