@@ -12,7 +12,7 @@ const Card = () => {
             <a 
                 target="_blank" 
                 href="https://www.material-tailwind.com/docs/html/card" 
-                className="block w-full px-4 py-2 text-center text-slate-700 transition-all" >
+                className="block w-full px-4 py-2 text-center text-slate-700 transition-all " >
               
             </a>
         </div>

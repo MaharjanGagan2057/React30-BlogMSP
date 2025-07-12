@@ -1,5 +1,6 @@
 import React,{ useState} from 'react'
 import   {Link } from 'react-router-dom'
+import Layout from '../../../components/layout/Layout'
 
 const Form = ({type, onsubmit}) => {
 // State to hold the form data
@@ -22,12 +23,14 @@ const Form = ({type, onsubmit}) => {
     }
   
   return (
-    <div className="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
+    <>
+   <Layout/>
+    <div className="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0 ">
     <div className="w-full sm:max-w-md p-5 mx-auto">
-      <h2 className="mb-12 text-center text-5xl font-extrabold">Welcome</h2><br />
+      <h2 className="mb-12 text-center text-5xl font-extrabold">Welcome</h2>
       <h2 className="mb-12 text-center text-2xl pt-0">
 
-         { type === 'login'? "login here to continue"  : "Register here to continue"}</h2><br />
+         { type === 'login'? "login here to continue"  : "Register here to continue"}</h2>
          
       <form onSubmit = {handleSubmit}>
         <div className="mb-4">
@@ -69,6 +72,7 @@ const Form = ({type, onsubmit}) => {
       </form>
     </div>
   </div>
+  </>
   )
 }
 

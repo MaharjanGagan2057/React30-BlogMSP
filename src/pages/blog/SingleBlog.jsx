@@ -7,9 +7,9 @@ const SingleBlog = () => {
    <Layout>
 
 <div class="bg-gray-100 dark:bg-gray-00  h-screen flex items-center">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row -mx-4">
-            <div class="md:flex-1 px-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8  ">
+        <div class="flex flex-col md:flex-row -mx-4 ">
+            <div class="md:flex-1 px-4 ">
                 <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4 border-2 border-gray-400 ">
                     <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9uZXl8ZW58MHx8MHx8fDA%3D" alt="Product Image"/>
                 </div>

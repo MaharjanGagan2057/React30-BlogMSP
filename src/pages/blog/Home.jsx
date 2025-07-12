@@ -10,7 +10,7 @@ const Home = () => {
 <Layout>
    
    
-<div className='flex flex-wrap justify-center  space-x-5 mt-6 p-4 bg-gray-100'>
+<div className='flex flex-wrap justify-center  space-x-5 mt-0 p-4 bg-gray-100'>
 <Card />
 <Card />
 <Card />

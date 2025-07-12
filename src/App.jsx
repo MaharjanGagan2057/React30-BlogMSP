@@ -8,10 +8,13 @@ import AddBlog from './pages/blog/AddBlog'
 import EditBlog from './pages/blog/EditBlog'
 import SingleBlog from './pages/blog/SingleBlog'
 
+
 function App() {
 
 
   return (
+  <div>
+
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
@@ -22,6 +25,8 @@ function App() {
       <Route path="/blog/id" element={<SingleBlog />} />
       </Routes>
   </BrowserRouter>
+  </div>
+
 
   )
 }
